@@ -25,3 +25,4 @@ dist-ssr
 
 # .env ファイルを除外
 .env
+.config.js
