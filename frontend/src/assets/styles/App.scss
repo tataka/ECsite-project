@@ -1,0 +1,182 @@
+@use "mq" as *;
+
+$white: white;
+$gray: gray;
+$lightgray: lightgray;
+$black: black;
+
+body {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 55px;
+
+  // >* {
+  //   width: 70%;
+  //   margin: 0 auto;
+  // }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.bi {
+  font-size: 16px;
+}
+
+header {
+  margin: 10px 10px;
+  // height: 30px;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+
+  h1 {
+    font-size: 20px;
+  }
+
+  img {
+    height: 25px;
+  }
+
+  ul {
+    margin: 0;
+    padding-top: 2px;
+  }
+
+  li {
+    display: inline-block;
+    padding-left: 15px;
+  }
+
+  .headerLogo {
+    margin-right: 5px;
+  }
+
+  div {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.tabs,
+.categories {
+  // margin: 5px 0px;
+  padding: 5px;
+  background-color: $gray;
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    font-weight: bold;
+    color: $white;
+    width: 80px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    &.active {
+      background: $lightgray;
+      border-radius: 10%;
+    }
+  }
+}
+
+footer {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+  position: fixed;
+  bottom: 0;
+  background-color: $gray;
+  opacity: 0.7;
+
+  ul {
+    margin: 0;
+  }
+
+  // nav {
+  //   display: flex;
+  //   justify-content: right;
+  // }
+  li {
+    display: inline-block;
+    padding-left: 10px;
+    a {
+      color: $white;
+    }
+  }
+}
+
+.divHomeImg {
+  // height: 200px;
+  width: 100%;
+
+  img {
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+  }
+}
+
+.ulProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid $gray;
+    border-radius: 10%;
+
+    img {
+      border-radius: 10%;
+    }
+  }
+}
+
+#regist {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+// h1 {
+//   color: red;
+
+//   @include mq(sm) {
+//     color: yellow;
+//   }
+
+//   @include mq(md) {
+//     color: green;
+//   }
+
+//   @include mq(lg) {
+//     color: blue;
+//   }
+
+//   @include mq(xl) {
+//     color: violet;
+//   }
+// }
+
+
+
+
+// #root {
+//   min-height: 100vh;
+//   position: relative;
+//   display: block;
+// }
