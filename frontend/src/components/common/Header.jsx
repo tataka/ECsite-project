@@ -1,0 +1,50 @@
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useCart } from '../../context/CartContext';
+
+const Header = () => {
+  const { cartItems } = useCart();
+  const cartItemCount = cartItems.reduce((sum, item) => sum + (item.quantity || 0), 0);
+  const navigate = useNavigate();
+
+  // localStorage から情報を取得
+  const isAdmin = localStorage.getItem('isAdmin') === 'true';
+  const isLoggedIn = !!localStorage.getItem('userId'); // userIdがあればログイン中とみなす
+
+  const handleLogout = () => {
+    localStorage.removeItem('isAdmin');
+    localStorage.removeItem('userId');
+    navigate('/testLogin');
+  };
+
+  return (
+    <header>
+      <div className="headerDiv">
+        <div className="headerLogo"><Link to="/"><img src="/logo.png" alt="logo" /></Link></div>
+        <h1>ONLINE Store</h1>
+      </div>
+      <nav className="headerNav">
+        <ul>
+          {!isLoggedIn && ( // ログインしてないときだけ表示
+            <>
+              <li><Link to="/testLogin"><i className="bi bi-unlock"></i></Link></li>
+              <li><Link to="/regist"><i className="bi bi-pencil-square"></i></Link></li>
+            </>
+          )}
+          <li><Link to="/cart"><i className="bi bi-cart"></i> (<tt>{cartItemCount}</tt>)</Link></li>
+          {isAdmin && ( // 管理者ならAdmin Homeリンク
+            <li><Link to="/admin/home">AdminHome</Link></li>
+          )}
+          {isLoggedIn && ( // ログイン中ならログアウトボタン
+            <>
+              <li><Link to="/testMypage">MyPage</Link></li>
+              <li><button onClick={handleLogout}>ログアウト</button></li>
+            </>
+          )}
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
