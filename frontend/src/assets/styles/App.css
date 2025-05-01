@@ -129,9 +129,22 @@ main {
   border-radius: 10%;
 }
 
-#regist {
-  width: 70vw;
-  margin: 0 auto;
+#regist div {
+  margin-left: 15px;
+}
+#regist input {
+  width: 70%;
+}
+#regist button {
+  display: block;
+  margin-top: 10px;
+}
+
+#change {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 #login {
