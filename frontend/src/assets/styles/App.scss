@@ -29,6 +29,10 @@ a {
   color: $black;
 }
 
+input {
+  width: 70%;
+}
+
 .bi {
   font-size: 16px;
 }
@@ -164,9 +168,6 @@ main {
   div {
     margin-left: 15px;
   }
-  input {
-    width: 70%;
-  }
 
   button {
     display: block;
@@ -202,6 +203,20 @@ main {
 
   >* {
     margin-top: 15px;
+  }
+}
+
+#editUser {
+  >* {
+    display: block;
+  }
+
+  h5 {
+    margin: 8px auto 0px;
+  }
+
+  button {
+    margin-top: 10px;
   }
 }
 

@@ -47,7 +47,6 @@ const Regist = () => {
                 <p>性別</p><input type="text" name="gender" value={formData.gender} onChange={handleChange} />
                 <button onClick={handleSubmit}>登録</button>
             </div>
-            <button id='change'>会員情報の変更はこちら<i className="bi bi-box-arrow-up-right"></i></button>
         </main>
 
     );

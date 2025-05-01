@@ -23,6 +23,7 @@ import Footer from './components/common/Footer';
 import Category from './components/common/Category';
 import RequireAdmin from './components/auth/RequireAdmin';
 
+import EditUser from './pages//EditUser';
 import AdminRoute from './router/AdminRoute';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path="/category" element={<Category />} />
         <Route path="/products" element={<Products />} />
         <Route path="/order-confirm" element={<OrderConfirm />} />
+        <Route path="/editUser" element={<EditUser />} />
 
         {/* ✅ フロント側の管理者・注文ページを表示 */}
         <Route path="/admin/home" element={<RequireAdmin><AdminHome /></RequireAdmin>} />
