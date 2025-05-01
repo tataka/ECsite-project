@@ -29,6 +29,10 @@ a {
   color: $black;
 }
 
+input {
+  width: 70%;
+}
+
 .bi {
   font-size: 16px;
 }
@@ -119,6 +123,7 @@ footer {
   li {
     display: inline-block;
     padding-left: 10px;
+
     a {
       color: $white;
     }
@@ -160,8 +165,21 @@ main {
 }
 
 #regist {
-  width: 70vw;
-  margin: 0 auto;
+  div {
+    margin-left: 15px;
+  }
+
+  button {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+#change {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 #login {
@@ -185,6 +203,20 @@ main {
 
   >* {
     margin-top: 15px;
+  }
+}
+
+#editUser {
+  >* {
+    display: block;
+  }
+
+  h5 {
+    margin: 8px auto 0px;
+  }
+
+  button {
+    margin-top: 10px;
   }
 }
 

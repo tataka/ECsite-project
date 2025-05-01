@@ -3,6 +3,7 @@ import cors from 'cors';
 import db from './db.cjs';
 import ordersRouter from './routes/orders.js';
 import adminRoutes from './routes/admin.js';
+import userRoutes from './routes/users.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 // ルーティング
 app.use('/api/admin', adminRoutes);
 app.use('/api/orders', ordersRouter);
+app.use('/api/users', userRoutes);
 
 // ログインAPI
 app.post('/api/login', async (req, res) => {

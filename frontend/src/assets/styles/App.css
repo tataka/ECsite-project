@@ -17,6 +17,10 @@ a {
   color: black;
 }
 
+input {
+  width: 70%;
+}
+
 .bi {
   font-size: 16px;
 }
@@ -129,9 +133,19 @@ main {
   border-radius: 10%;
 }
 
-#regist {
-  width: 70vw;
-  margin: 0 auto;
+#regist div {
+  margin-left: 15px;
+}
+#regist button {
+  display: block;
+  margin-top: 10px;
+}
+
+#change {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 #login {
@@ -153,4 +167,14 @@ main {
 }
 #login > * {
   margin-top: 15px;
+}
+
+#editUser > * {
+  display: block;
+}
+#editUser h5 {
+  margin: 8px auto 0px;
+}
+#editUser button {
+  margin-top: 10px;
 }/*# sourceMappingURL=App.css.map */
