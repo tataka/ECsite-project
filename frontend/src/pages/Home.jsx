@@ -8,7 +8,6 @@ function Home() {
     return (
         <main>
             {/* mainコンテンツ内容 */}
-            <p>This is the main content of the page.</p>
             <Category />
             <div className="divHomeImg"><img src={storeImage2} alt="" /></div>
             <div className="divHomeImg"><img src={storeImage3} alt="" /></div>
