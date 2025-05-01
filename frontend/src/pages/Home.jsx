@@ -9,13 +9,15 @@ import storeImage3 from '../assets/img/image1.jpeg'
 
 function Home() {
     return (
-        <main>
-            {/* mainコンテンツ内容 */}
+        <>
             <Category />
-            <div className="divHomeImg"><Link to="/storeInfo"><img src={storeImage2} alt="" /></Link></div>
-            <div className="divHomeImg"><img src={storeImage3} alt="" /></div>
-            <div className="divHomeImg"><img src={storeImage1} alt="" /></div>
-        </main>
+            <main>
+                {/* mainコンテンツ内容 */}
+                <div className="divHomeImg"><Link to="/storeInfo"><img src={storeImage2} alt="" /></Link></div>
+                <div className="divHomeImg"><img src={storeImage3} alt="" /></div>
+                <div className="divHomeImg"><img src={storeImage1} alt="" /></div>
+            </main>
+        </>
     );
 };
 

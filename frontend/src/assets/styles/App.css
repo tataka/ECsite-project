@@ -97,14 +97,18 @@ footer li a {
   color: white;
 }
 
+main {
+  margin: 0px 10px;
+}
+
 .divHomeImg {
-  width: 350px;
+  width: 100%;
   height: 200px;
   margin: 0 auto;
 }
 .divHomeImg img {
-  padding: 10px;
-  width: 350px;
+  padding: 10px 0px;
+  width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -128,4 +132,25 @@ footer li a {
 #regist {
   width: 70vw;
   margin: 0 auto;
+}
+
+#login {
+  margin: 0 auto;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 10%;
+  text-align: center;
+}
+#login h2 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+#login input {
+  display: block;
+  width: 100%;
+}
+#login > * {
+  margin-top: 15px;
 }/*# sourceMappingURL=App.css.map */
