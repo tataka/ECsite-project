@@ -39,6 +39,10 @@ header ul {
 header li {
   display: inline-block;
   padding-left: 15px;
+  text-align: center;
+}
+header li div {
+  font-size: 10px;
 }
 header .headerLogo {
   margin-right: 5px;
