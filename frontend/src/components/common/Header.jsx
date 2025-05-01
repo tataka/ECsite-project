@@ -27,11 +27,11 @@ const Header = () => {
         <ul>
           {!isLoggedIn && ( // ログインしてないときだけ表示
             <>
-              <li><Link to="/testLogin"><i className="bi bi-unlock"></i></Link></li>
-              <li><Link to="/regist"><i className="bi bi-pencil-square"></i></Link></li>
+              <li><Link to="/testLogin"><i className="bi bi-unlock"></i><div>signin</div></Link></li>
+              <li><Link to="/regist"><i className="bi bi-pencil-square"></i><div>signup</div></Link></li>
             </>
           )}
-          <li><Link to="/cart"><i className="bi bi-cart"></i> (<tt>{cartItemCount}</tt>)</Link></li>
+          <li><Link to="/cart"><i className="bi bi-cart"></i> (<tt>{cartItemCount}</tt>)<div>cart</div></Link></li>
           {isAdmin && ( // 管理者ならAdmin Homeリンク
             <li><Link to="/admin/home">AdminHome</Link></li>
           )}

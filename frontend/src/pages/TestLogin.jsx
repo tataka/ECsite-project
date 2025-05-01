@@ -38,8 +38,8 @@ function TestLogin({ setUser }) {
   };
 
   return (
-    <div>
-      <h2>ログイン</h2>
+    <main id='login'>
+      <h2>サインイン<br />してください</h2>
       <input
         type="email"
         value={email}
@@ -52,8 +52,8 @@ function TestLogin({ setUser }) {
         onChange={e => setPassword(e.target.value)}
         placeholder="パスワード"
       />
-      <button onClick={handleLogin}>ログイン</button>
-    </div>
+      <button onClick={handleLogin}>sign in</button>
+    </main>
   );
 }
 
