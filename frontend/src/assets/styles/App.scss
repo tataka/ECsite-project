@@ -73,6 +73,7 @@ header {
   // margin: 5px 0px;
   padding: 5px;
   background-color: $gray;
+  opacity: 0.7;
   display: flex;
   justify-content: space-around;
 
@@ -121,12 +122,15 @@ footer {
 
 .divHomeImg {
   // height: 200px;
-  width: 100%;
+  width: 350px;
+  height: 200px;
+  margin: 0 auto;
 
   img {
-    margin: 0 auto;
     padding: 10px;
-    height: 100%;
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
   }
 }
 
