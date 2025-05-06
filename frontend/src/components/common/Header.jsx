@@ -33,8 +33,8 @@ const Header = () => {
           )}
           {isLoggedIn && ( // ログイン中ならログアウトボタン
             <>
-              <li><button onClick={handleLogout}><i class="bi bi-lock-fill"></i><div>signout</div></button></li>
-              <li><Link to="/testMypage"><i class="bi bi-person-circle"></i><div>MyPage</div></Link></li>
+              <li><button onClick={handleLogout}><i className="bi bi-lock-fill"></i><div>signout</div></button></li>
+              <li><Link to="/testMypage"><i className="bi bi-person-circle"></i><div>MyPage</div></Link></li>
             </>
           )}
           <li><Link to="/cart"><i className="bi bi-cart"></i> (<tt>{cartItemCount}</tt>)<div>cart</div></Link></li>
