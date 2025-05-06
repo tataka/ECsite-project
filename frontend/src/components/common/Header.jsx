@@ -31,15 +31,15 @@ const Header = () => {
               <li><Link to="/regist"><i className="bi bi-pencil-square"></i><div>signup</div></Link></li>
             </>
           )}
+          {isLoggedIn && ( // ログイン中ならログアウトボタン
+            <>
+              <li><button onClick={handleLogout}><i className="bi bi-lock-fill"></i><div>signout</div></button></li>
+              <li><Link to="/testMypage"><i className="bi bi-person-circle"></i><div>MyPage</div></Link></li>
+            </>
+          )}
           <li><Link to="/cart"><i className="bi bi-cart"></i> (<tt>{cartItemCount}</tt>)<div>cart</div></Link></li>
           {isAdmin && ( // 管理者ならAdmin Homeリンク
             <li><Link to="/admin/home">AdminHome</Link></li>
-          )}
-          {isLoggedIn && ( // ログイン中ならログアウトボタン
-            <>
-              <li><Link to="/testMypage">MyPage</Link></li>
-              <li><button onClick={handleLogout}>ログアウト</button></li>
-            </>
           )}
         </ul>
       </nav>
