@@ -11,7 +11,8 @@ body {
   font-style: normal;
   font-size: 14px;
   position: relative;
-  margin-bottom: 55px;
+  // margin-bottom: 55px;
+  padding-bottom: 55px;
 
   // >* {
   //   width: 70%;
@@ -59,11 +60,20 @@ header {
 
   li {
     display: inline-block;
-    padding-left: 15px;
+    padding-left: 10px;
     text-align: center;
+    width: 47px;
 
     div {
       font-size: 10px;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      padding: 0;
     }
   }
 
