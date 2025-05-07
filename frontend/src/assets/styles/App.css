@@ -129,7 +129,7 @@ main {
 .ulProducts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: auto calc(50% - 180px);
 }
 .ulProducts li {
   margin: 5px;
