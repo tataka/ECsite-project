@@ -230,6 +230,17 @@ main {
   }
 }
 
+#myPage {
+  p:nth-of-type(2n) {
+    padding-bottom: 10px;
+  }
+
+  button {
+    font-size: small;
+    padding: 15px 0;
+  }
+}
+
 // h1 {
 //   color: red;
 
