@@ -160,7 +160,7 @@ main {
 .ulProducts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: auto calc(50% - 180px);
 
   li {
     margin: 5px;
@@ -227,6 +227,17 @@ main {
 
   button {
     margin-top: 10px;
+  }
+}
+
+#myPage {
+  p:nth-of-type(2n) {
+    padding-bottom: 10px;
+  }
+
+  button {
+    font-size: small;
+    padding: 15px 0;
   }
 }
 

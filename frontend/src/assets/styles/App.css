@@ -129,7 +129,7 @@ main {
 .ulProducts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: auto calc(50% - 180px);
 }
 .ulProducts li {
   margin: 5px;
@@ -185,4 +185,12 @@ main {
 }
 #editUser button {
   margin-top: 10px;
+}
+
+#myPage p:nth-of-type(2n) {
+  padding-bottom: 10px;
+}
+#myPage button {
+  font-size: small;
+  padding: 15px 0;
 }/*# sourceMappingURL=App.css.map */
