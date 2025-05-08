@@ -187,4 +187,11 @@ main {
 #myPage button {
   font-size: small;
   padding: 15px 0;
+}
+
+#storeInfoMain div {
+  width: 80%;
+}
+#storeInfoMain div iframe {
+  width: 80%;
 }/*# sourceMappingURL=App.css.map */
