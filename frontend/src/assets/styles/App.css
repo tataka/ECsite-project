@@ -126,18 +126,12 @@ main {
      object-fit: cover;
 }
 
-.ulProducts {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto calc(50% - 180px);
-}
 .ulProducts li {
+  display: flex;
   margin: 5px;
-  padding: 8px;
-  border: 1px solid gray;
-  border-radius: 10%;
 }
 .ulProducts li img {
+  margin: 5px;
   border-radius: 10%;
 }
 

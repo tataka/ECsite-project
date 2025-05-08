@@ -158,20 +158,30 @@ main {
 }
 
 .ulProducts {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto calc(50% - 180px);
-
   li {
+    display: flex;
     margin: 5px;
-    padding: 8px;
-    border: 1px solid $gray;
-    border-radius: 10%;
 
     img {
+      margin: 5px;
       border-radius: 10%;
     }
   }
+
+  // display: flex;
+  //   flex-wrap: wrap;
+  //   margin: auto calc(50% - 180px);
+
+  // li {
+  //     margin: 5px;
+  //     padding: 8px;
+  //     border: 1px solid $gray;
+  //     border-radius: 10%;
+
+  //     img {
+  //       border-radius: 10%;
+  //     }
+  //   }
 }
 
 #regist {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useCart } from "../context/CartContext"; // ← 追加
+import { useCart } from "../context/CartContext";
 
 import Category from '../components/common/Category';
 
@@ -45,13 +45,15 @@ const Products = () => {
             {availableProducts.map((product) => (
               <li key={product.id}> {/* またはユニークになるように組み合わせる */}
                 <img src={product.image_url} alt={product.name} width="150" />
-                <h3>{product.name}</h3>
-                <p>価格: ¥{product.price}</p>
-                <p>カラー: {product.color}</p>
-                <p>サイズ: {product.size}</p>
-                <button onClick={() => addToCart({ ...product, quantity: 1 })}>
-                  カートに追加
-                </button>
+                <div>
+                  <h3>{product.name}</h3>
+                  <p>価格: ¥{product.price}</p>
+                  <p>カラー: {product.color}</p>
+                  <p>サイズ: {product.size}</p>
+                  <button onClick={() => addToCart({ ...product, quantity: 1 })}>
+                    カートに追加
+                  </button>
+                </div>
               </li>
             ))}
           </ul>
