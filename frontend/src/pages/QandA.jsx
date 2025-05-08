@@ -3,7 +3,10 @@ import Accordion from '../components/specific/qanda/Accordion';
 
 function QandA() {
     return (
-        <Accordion />
+        <main id='qanda'>
+            <h3>よくある質問</h3>
+            <Accordion />
+        </main>
     );
 }
 
