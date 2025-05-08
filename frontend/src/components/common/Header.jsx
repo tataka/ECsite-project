@@ -25,6 +25,7 @@ const Header = () => {
       </div>
       <nav className="headerNav">
         <ul>
+          <li><Link to=""><i className="bi bi-house-door"></i><div>Home</div></Link></li>
           {!isLoggedIn && ( // ログインしてないときだけ表示
             <>
               <li><Link to="/testLogin"><i className="bi bi-unlock"></i><div>signin</div></Link></li>
@@ -39,7 +40,7 @@ const Header = () => {
           )}
           <li><Link to="/cart"><i className="bi bi-cart"></i> (<tt>{cartItemCount}</tt>)<div>cart</div></Link></li>
           {isAdmin && ( // 管理者ならAdmin Homeリンク
-            <li><Link to="/admin/home">AdminHome</Link></li>
+            <li><Link to="/admin/home"><i className="bi bi-person-raised-hand"></i><div>Admin</div></Link></li>
           )}
         </ul>
       </nav>
