@@ -42,6 +42,7 @@ header ul {
 }
 header li {
   display: inline-block;
+  padding-top: 10px;
   padding-left: 10px;
   text-align: center;
   width: 47px;
