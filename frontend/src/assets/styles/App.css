@@ -24,6 +24,11 @@ input {
 .bi {
   font-size: 16px;
 }
+@media (min-width: 480px) {
+  .bi {
+    font-size: 22px;
+  }
+}
 
 header {
   margin: 10px 10px;
@@ -47,8 +52,19 @@ header li {
   text-align: center;
   width: 47px;
 }
+@media (min-width: 480px) {
+  header li {
+    width: 55px;
+  }
+}
 header li div {
   font-size: 10px;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  header li div {
+    font-size: 13px;
+  }
 }
 header li button {
   background: transparent;
