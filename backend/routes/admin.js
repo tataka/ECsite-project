@@ -13,7 +13,7 @@ router.get('/orders', async (req, res) => {
     await db.execute('UPDATE orders SET status = "確定" WHERE id = ?', [orderId]);
     res.json({ message: '注文を確定しました' });
   });
-  // admin.js の最後に追加
+  
 export default router;
 
   

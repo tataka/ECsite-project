@@ -31,9 +31,6 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // const removeFromCart = (productId) => {
-  //   setCartItems((prevItems) => prevItems.filter(item => item.id !== productId));
-  // };
   const removeFromCart = (productToRemove) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find(

@@ -11,7 +11,7 @@
   .orderTable td {
     border: 1px solid black;
     padding: 8px;
-    text-align: left; /* 必要に応じて */
+    text-align: left; 
   }
   
   .orderTable tbody tr {
@@ -19,5 +19,5 @@
   }
   
   .orderTable tbody tr:last-child {
-    border-bottom: none; /* 最後の行の下線は不要な場合 */
+    border-bottom: none; 
   }
