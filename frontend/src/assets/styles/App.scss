@@ -18,6 +18,9 @@ body {
   //   width: 70%;
   //   margin: 0 auto;
   // }
+  @include mq(md) {
+    font-size: 16px;
+  }
 }
 
 ul {
@@ -51,6 +54,10 @@ header {
 
   h1 {
     font-size: 20px;
+
+    @include mq(md) {
+      font-size: 30px;
+    }
   }
 
   img {
