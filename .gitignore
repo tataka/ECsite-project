@@ -25,5 +25,5 @@ dist-ssr
 
 # .env ファイルを除外
 .env
-*.config.js
+# *.config.js
 package-lock.json
