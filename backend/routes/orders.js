@@ -131,4 +131,4 @@ router.post('/confirm', async (req, res) => {
 });
 
 
-export default router; // ← これがないと default import できない
+export default router;

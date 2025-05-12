@@ -5,14 +5,14 @@ import styles from '../assets/styles/AdminOrders.module.css';
 const AdminOrders = () => {
   const [orders, setOrders] = useState([]);
 
-  // ✅ ここで定義しておく
+  // ここで定義しておく
   const fetchOrders = async () => {
     const res = await fetch('http://localhost:3001/api/admin/orders');
     const data = await res.json();
     setOrders(data);
   };
 
-  // ✅ この中でfetchOrdersを使う
+  // この中でfetchOrdersを使う
   const handleConfirmOrder = async (orderId, userId) => {
     const confirm = window.confirm('本当に確定していいですか？');
     if (!confirm) return;
@@ -35,7 +35,7 @@ const AdminOrders = () => {
 
       if (data.success) {
         alert('注文が確定され、メールが送信されました。');
-        fetchOrders(); // ✅ ここで呼べるようになる
+        fetchOrders(); // ここで呼べるようになる
       } else {
         alert('確定処理に失敗しました。');
       }

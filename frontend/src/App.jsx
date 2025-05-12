@@ -51,7 +51,7 @@ function App() {
         <Route path="/order-confirm" element={<OrderConfirm />} />
         <Route path="/editUser" element={<EditUser />} />
 
-        {/* ✅ フロント側の管理者・注文ページを表示 */}
+        {/* フロント側の管理者・注文ページを表示 */}
         <Route path="/admin/home" element={<RequireAdmin><AdminHome /></RequireAdmin>} />
         <Route path="/admin/" element={<RequireAdmin><AdminPage /></RequireAdmin>} />
         <Route path="/orders" element={<RequireAdmin><OrdersPage /></RequireAdmin>} />
