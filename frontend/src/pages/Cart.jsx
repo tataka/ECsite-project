@@ -28,7 +28,7 @@ const CartPage = () => {
   };
 
   return (
-    <div>
+    <main>
       <h1>カート</h1>
       <ul>
         {cartItems.map(item => (
@@ -53,7 +53,7 @@ const CartPage = () => {
       <div style={{ marginTop: '1rem' }}>
         <button onClick={handleOrder}>注文する</button>
       </div>
-    </div>
+    </main>
   );
 };
 
