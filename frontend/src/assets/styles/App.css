@@ -6,6 +6,11 @@ body {
   position: relative;
   padding-bottom: 55px;
 }
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
 
 ul {
   list-style: none;
@@ -24,6 +29,16 @@ input {
 .bi {
   font-size: 16px;
 }
+@media (min-width: 480px) {
+  .bi {
+    font-size: 22px;
+  }
+}
+@media (min-width: 600px) {
+  .bi {
+    font-size: 25px;
+  }
+}
 
 header {
   margin: 10px 10px;
@@ -33,8 +48,18 @@ header {
 header h1 {
   font-size: 20px;
 }
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
 header img {
   height: 25px;
+}
+@media (min-width: 600px) {
+  header img {
+    height: 45px;
+  }
 }
 header ul {
   margin: 0;
@@ -47,8 +72,29 @@ header li {
   text-align: center;
   width: 47px;
 }
+@media (min-width: 480px) {
+  header li {
+    width: 55px;
+  }
+}
+@media (min-width: 600px) {
+  header li {
+    width: 60px;
+  }
+}
 header li div {
   font-size: 10px;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  header li div {
+    font-size: 13px;
+  }
+}
+@media (min-width: 600px) {
+  header li div {
+    font-size: 16px;
+  }
 }
 header li button {
   background: transparent;
@@ -99,6 +145,11 @@ footer {
   background-color: gray;
   opacity: 0.7;
 }
+@media (min-width: 600px) {
+  footer {
+    height: 50px;
+  }
+}
 footer ul {
   margin: 0;
 }
@@ -119,12 +170,23 @@ main {
   height: 200px;
   margin: 0 auto;
 }
+@media (min-width: 600px) {
+  .divHomeImg {
+    height: 400px;
+  }
+}
 .divHomeImg img {
   padding: 10px 0px;
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+}
+@media (min-width: 600px) {
+  .divHomeImg img {
+    height: 100%;
+  }
 }
 
 .ulProducts li {
@@ -199,4 +261,8 @@ main {
 
 #qanda h3 {
   margin-bottom: 10px;
+}
+
+#root {
+  min-height: 100vh;
 }/*# sourceMappingURL=App.css.map */
