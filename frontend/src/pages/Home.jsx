@@ -14,9 +14,9 @@ function Home() {
             <Category />
             <main id='home'>
                 {/* mainコンテンツ内容 */}
-                <div className="divHomeImg"><Link to="/storeInfo"><img src={storeImage2} alt="" /></Link></div>
-                <div className="divHomeImg"><img src={storeImage3} alt="" /></div>
-                <div className="divHomeImg"><img src={storeImage1} alt="" /></div>
+                <div className="divHomeImg"><Link to="/products?gender=WOMEN&category=tops"><h4>WOMEN tops</h4><img src={storeImage2} alt="" /></Link></div>
+                <div className="divHomeImg"><Link to="/products?gender=MEN&category=tops"><h4>MEN tops</h4><img src={storeImage3} alt="" /></Link></div>
+                <div className="divHomeImg"><Link to="/products?gender=KIDS&category=tops"><h4>KIDS tops</h4><img src={storeImage1} alt="" /></Link></div>
             </main>
         </>
     );
