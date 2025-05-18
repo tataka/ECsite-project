@@ -1,3 +1,4 @@
+//Home.jsx
 import { Link } from 'react-router-dom';
 import React from "react";
 
@@ -11,7 +12,7 @@ function Home() {
     return (
         <>
             <Category />
-            <main>
+            <main id='home'>
                 {/* mainコンテンツ内容 */}
                 <div className="divHomeImg"><Link to="/storeInfo"><img src={storeImage2} alt="" /></Link></div>
                 <div className="divHomeImg"><img src={storeImage3} alt="" /></div>
