@@ -5,7 +5,7 @@ import React from "react";
 import Category from '../components/common/Category';
 
 import storeImage1 from '../assets/img/image6.jpg'
-import storeImage2 from '../assets/img/image3.jpg'
+import storeImage2 from '../assets/img/image5.jpeg'
 import storeImage3 from '../assets/img/image1.jpeg'
 
 function Home() {
